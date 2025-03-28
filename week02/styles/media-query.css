@@ -10,10 +10,10 @@ header, main, footer {
     background-color: #D6FFFF;
 }
 
-main {
+.main {
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: auto; */
+    grid-template-rows: auto;
     grid-gap: 1rem;
 }
 
@@ -22,14 +22,3 @@ section {
     background-color: #FFF9F1;
 }
 
-/* @media screen and (min-width: 500px) {
-    .header {
-        background-color: black;
-        color: white;
-    }
-
-    main {
-        grid-template-columns: 1fr 1fr;
-    }
-
-} */
