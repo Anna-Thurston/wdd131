@@ -91,6 +91,11 @@ h1 {
     padding: 10px;
 }
 
+h2 {
+    font-weight: bolder;
+    padding: 10px;
+}
+
 figure {
     padding: 10px;
     display: grid;
