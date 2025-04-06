@@ -71,6 +71,8 @@ main picture img {
 
 footer {
     font-weight: 400;
+    color: white;
+    font-size: x-large;
 }
 
 @media (min-width: 600px) {
