@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("lastModified").innerHTML = text;
    });
 
-
+//    Temple object data
 const temples = [
 {
     templeName: "Aba Nigeria",
@@ -73,5 +73,28 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
 },
-// Add more temple objects here...
+{
+    templeName: "Rexburg Idaho",
+    location: "Rexburg, Idaho",
+    dedicated: "2005, July, 30",
+    area: 57504,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-775365-wallpaper.jpg"
+}
+{
+    templeName: "Louisville Kentucky",
+    location: "Crestwood, Kentucky",
+    dedicated: "1999, May, 29",
+    area: 10700,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/louisville-kentucky/400x250/louisville-temple-lds-408094-wallpaper.jpg"
+}
+{
+    templeName: "Mount Timpanogos Utah",
+    location: "American Fork, Utah",
+    dedicated: "1993, October, 9",
+    area: 107240,
+    imageUrl:
+    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mount-timpanogos-utah/400x250/mount-timpanogos-temple-lds-994445-wallpaper.jpg"
+}
 ];
