@@ -1,0 +1,41 @@
+
+
+@media screen and (min-width: 560px) {
+    .figure-container {
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media screen and (min-width: 850px) {
+	
+	.figure-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+
+	nav li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	main {
+		max-width: 1000px;
+	}
+
+	#menu {
+		display: none;
+	}
+}
