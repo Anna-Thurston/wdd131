@@ -15,16 +15,6 @@ header {
     padding: 10px;
 }
 
-/* #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	background-color: #eee;
-	color: #000;
-} */
-
 #menu {
 	font-size: 1.5rem;
 	border: 0;
@@ -96,20 +86,39 @@ h2 {
     padding: 10px;
 }
 
-figure {
+/* figure {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     place-items: center;
     text-align: center;
-}
+} */
 
-img {
+
+.temple-card {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+    text-align: center;
+    background-color: #EEEEEE;
+    border: 1px solid #ddd;
+    margin: 10px;
+    /* width: 300px; */
+}
+.temple-card img {
     width: 100%;
     height: auto;
 }
-
+.temple-card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+.temple-card p {
+    margin: 5px 0;
+}
 
 footer {
     text-align: center;

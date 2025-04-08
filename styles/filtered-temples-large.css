@@ -1,7 +1,7 @@
 
 
 @media screen and (min-width: 560px) {
-    .figure-container {
+    #temple-container {
 		display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 850px) {
 	
-	.figure-container {
+	#temple-container {
         grid-template-columns: repeat(3, 1fr);
     }
 
