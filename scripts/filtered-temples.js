@@ -15,6 +15,33 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById("lastModified").innerHTML = text;
    });
 
+document.getElementById('home').addEventListener('click', () => displayTemples(temples));
+document.getElementById('old').addEventListener('click', () => {
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(',')[0], 10);
+        return year < 1900;
+    });
+    displayTemples(oldTemples);
+});
+
+document.getElementById('new').addEventListener('click', () => {
+    const newTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(',')[0], 10);
+        return year > 2000;
+    });
+    displayTemples(newTemples);
+});
+
+document.getElementById('large').addEventListener('click', () => {
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    displayTemples(largeTemples);
+});
+
+document.getElementById('small').addEventListener('click', () => {
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    displayTemples(smallTemples);
+});
+
 //    Temple object data
 const temples = [
 {
@@ -80,7 +107,7 @@ const temples = [
     area: 57504,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rexburg-idaho/400x250/rexburg-temple-775365-wallpaper.jpg"
-}
+},
 {
     templeName: "Louisville Kentucky",
     location: "Crestwood, Kentucky",
@@ -88,7 +115,7 @@ const temples = [
     area: 10700,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/louisville-kentucky/400x250/louisville-temple-lds-408094-wallpaper.jpg"
-}
+},
 {
     templeName: "Mount Timpanogos Utah",
     location: "American Fork, Utah",
@@ -96,5 +123,30 @@ const temples = [
     area: 107240,
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mount-timpanogos-utah/400x250/mount-timpanogos-temple-lds-994445-wallpaper.jpg"
-}
+},
 ];
+
+
+// Temple cards
+const templeContainer = document.getElementById('temple-container');
+
+function displayTemples(filteredTemples) {
+    templeContainer.innerHTML = '';
+    filteredTemples.forEach(temple => {
+        const templeCard = document.createElement('div');
+        templeCard.classList.add('temple-card');
+
+    templeCard.innerHTML = `
+        <h2>${temple.templeName}</h2>
+        <p><strong>Location:</strong> ${temple.location}</p>
+        <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+        <p><strong>Size:</strong> ${temple.area.toLocaleString()} square feet</p>
+        <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+    `;
+
+        templeContainer.appendChild(templeCard);
+    });
+
+}
+
+displayTemples(temples);
