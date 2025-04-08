@@ -1,0 +1,32 @@
+:root {
+    --dark-background: #2D022B;
+    --light-background: #D5CDD5;
+    --dark-text: black;
+    --light-text: #FFF9F1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", "Gill Sans", sans-serif;
+    font-weight: 100;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+}
+
+main {
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    padding: 10px;
+    margin: 10px;
+}
