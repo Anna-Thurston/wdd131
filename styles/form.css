@@ -3,6 +3,7 @@
     --light-background: #D5CDD5;
     --dark-text: black;
     --light-text: #FFF9F1;
+    --required-color: darkred;
 }
 
 * {
@@ -14,10 +15,10 @@
 body {
     font-family: "Roboto", "Gill Sans", sans-serif;
     font-weight: 100;
+    /* text-align: center; */
 }
 
 header, footer {
-    text-align: center;
     padding: 10px;
     margin: 10px;
     background-color: var(--dark-background);
@@ -30,3 +31,36 @@ main {
     padding: 10px;
     margin: 10px;
 }
+
+.asterisk {
+    color: var(--required-color);
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form label {
+    display: block;
+    color: var(--dark-background);
+    font-weight: bold;
+}
+
+@media  (min-width: 550px) {
+    body {
+        width: 500px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        width: 700px;
+        margin: auto;
+    }
+    .form fieldset, input [type=submit]  {
+        width: 200px;
+        margin: auto;
+    }
+}
+
