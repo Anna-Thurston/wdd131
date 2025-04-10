@@ -1,0 +1,54 @@
+:root {
+    --dark-background: #2D022B;
+    --light-background: #D5CDD5;
+    --dark-text: black;
+    --light-text: #FFF9F1;
+    --accent-color: #7B3F61; /* optional touch for links/buttons */
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--dark-background);
+    color: var(--light-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#reviewCount {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: var(--light-background);
+}
+
+a {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    background-color: var(--accent-color);
+    color: var(--light-text);
+}

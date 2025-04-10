@@ -1,5 +1,6 @@
 :root {
     --dark-background: #2D022B;
+    --hover-color: #4A1450;
     --light-background: #D5CDD5;
     --dark-text: black;
     --light-text: #FFF9F1;
@@ -15,7 +16,6 @@
 body {
     font-family: "Roboto", "Gill Sans", sans-serif;
     font-weight: 100;
-    /* text-align: center; */
 }
 
 header, footer {
@@ -23,6 +23,7 @@ header, footer {
     margin: 10px;
     background-color: var(--dark-background);
     color: var(--light-text);
+    text-align: center;
 }
 
 main {
@@ -38,29 +39,99 @@ main {
 
 .form fieldset {
     border: none;
+    width: 100%;
 }
 
 .form label {
-    display: block;
+    display: inline-block;
     color: var(--dark-background);
-    font-weight: bold;
+    min-height: 40px;
 }
 
-@media  (min-width: 550px) {
+#checkBoxes {
+    padding-top: 10px;
+}
+
+/* #radioButtons {
+    display: grid;
+} */
+
+
+.label {
+    font-weight: bold;
+    padding: 5px;
+}
+
+select, input[type=date], textarea, input[type=text], input[type=submit] {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+
+
+textarea {
+    height: 100px;
+}
+
+
+#checkAll {
+    font-weight: 100;
+}
+
+input[type=submit] {
+    background-color: var(--dark-background);
+    color: var(--light-background);
+    border: 2px solid var(--light-background);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+    
+input[type=submit]:hover {
+    background-color: var(--hover-color);
+    color: var(--light-text);
+    border-color: var(--light-text);
+}
+
+@media  (min-width: 500px) {
     body {
-        width: 500px;
+        width: 100%;
         margin: auto;
+    }
+
+    #mainContainer {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #radioButtons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .star-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
 }
 
 @media (min-width: 800px) {
     body {
-        width: 700px;
+        width: 100%;
         margin: auto;
     }
-    .form fieldset, input [type=submit]  {
-        width: 200px;
-        margin: auto;
+
+    header, footer, main {
+        padding: 50px;
+    }
+
+    #checkBoxes {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 

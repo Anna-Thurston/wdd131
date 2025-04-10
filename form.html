@@ -17,87 +17,109 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get" action="review.html" class="form">
-        <fieldset>   
-            <label for="productName">
-                Product Name
-                <span class="asterisk">*</span>
-            </label>
-            <select id="productName" name="productName" required>
-                <option value="" disabled selected>Select a Product ...</option>
+        <div id="mainContainer">
+            <form method="get" action="review.html" class="form">
+            <fieldset>   
+                <label for="productName" class="label">
+                    Product Name
+                    <span class="asterisk">*</span>
+                </label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
 
-                <!-- <option value="Product 1">Product 1</option>
-                <option value="Product 2">Product 2</option>
-                <option value="Product 3">Product 3</option>
-                <option value="Product 4">Product 4</option>
-                <option value="Product 5">Product 5</option> -->
-            </select>
-        </fieldset> 
-        <br><br>
-        <fieldset class="ratings">
-            <label>
-                Overall Rating
-                <span class="asterisk">*</span>
-            </label>
-            <br>
-            <input type="radio" id="rating1" name="rating" value="1" required>
-            <label for="rating1">☆</label>
-            
-            <input type="radio" id="rating2" name="rating" value="2" required>
-            <label for="rating2">☆☆</label>
-            
-            <input type="radio" id="rating3" name="rating" value="3" required>
-            <label for="rating3">☆☆☆</label>
-            
-            <input type="radio" id="rating4" name="rating" value="4" required>
-            <label for="rating4">☆☆☆☆</label>
-            
-            <input type="radio" id="rating5" name="rating" value="5" required>
-            <label for="rating5">☆☆☆☆☆</label>
-        </fieldset>
-        <br><br>
-        <fieldset>
-            <label for="installDate">
-                Date of Installation
-                <span class="asterisk">*</span>
-            </label>
-            <input type="date" id="installDate" name="installDate" required>
+                    <!-- <option value="Product 1">Product 1</option>
+                    <option value="Product 2">Product 2</option>
+                    <option value="Product 3">Product 3</option>
+                    <option value="Product 4">Product 4</option>
+                    <option value="Product 5">Product 5</option> -->
+                </select>
+            </fieldset> 
             <br><br>
-        </fieldset>
-        <fieldset>
-            <label for="usefulFeatures">
-                Which features did you find useful in the product?
-                <br>
-                <span>
-                    <i>(Check all that apply)</i>
-                </span>
-            </label>
-            <br>
-            <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
-            <label for="feature1">Durability</label>
-            <br>
-            <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
-            <label for="feature2">Ease of Use</label>
-            <br>
-            <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
-            <label for="feature3">Performance</label>
-            <br>
-            <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
-            <label for="feature4">Design</label>
+            <fieldset class="ratings">
+                <label class="label">
+                    Overall Rating
+                    <span class="asterisk">*</span>
+                </label>
+                <div id="radioButtons">
+                    <div class="star-button">
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        <label for="rating1">☆</label>
+                    </div> 
+                    <div class="star-button">  
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                        <label for="rating2">☆☆</label>
+                    </div> 
+                    <div class="star-button">   
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                        <label for="rating3">☆☆☆</label>
+                    </div>  
+                    <div class="star-button">
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                        <label for="rating4">☆☆☆☆</label>
+                    </div>
+                    <div class="star-button">   
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                        <label for="rating5">☆☆☆☆☆</label>
+                    </div>
+                </div>
+            </fieldset>
             <br><br>
-        </fieldset>
-        <fieldset>
-            <label for="review">Written Review (Optional)</label>
-            <textarea id="review" name="review"></textarea>
+            <fieldset>
+                <label for="installDate" class="label">
+                    Date of Installation
+                    <span class="asterisk">*</span>
+                </label>
+                <input type="date" id="installDate" name="installDate" required>
+            </fieldset>
             <br><br>
-        </fieldset>
-        <fieldset>
-            <label for="userName">Your Name (Optional)</label>
-            <input type="text" id="userName" name="userName">
-        </fieldset>
-        <br><br>
-            <input type="submit" value="Post Review">
-        </form>
+            <fieldset>
+                <label class="label">
+                    Which features did you find useful in the product?
+                    <br>
+                    <span id="checkAll">
+                        <i>(Check all that apply)</i>
+                    </span>
+                </label>
+                <div id="checkBoxes">
+                    <div class="check-box">
+                        <input type="checkbox" id="feature1" name="usefulFeatures" value="Feature 1">
+                        <label for="feature1">Durability</label>
+                    </div>
+                        <br>
+                    <div class="check-box">
+                        <input type="checkbox" id="feature2" name="usefulFeatures" value="Feature 2">
+                        <label for="feature2">Ease of Use</label>
+                    </div>
+                        <br>
+                    <div class="check-box">    
+                        <input type="checkbox" id="feature3" name="usefulFeatures" value="Feature 3">
+                        <label for="feature3">Performance</label>
+                    </div>
+                        <br>
+                    <div class="check-box">
+                        <input type="checkbox" id="feature4" name="usefulFeatures" value="Feature 4">
+                        <label for="feature4">Design</label>
+                    </div>
+                </div>
+                    <br><br>
+            </fieldset>
+            <fieldset>
+                <label for="review" class="label">
+                    Written Review (Optional)
+                </label>
+                <textarea id="review" name="review"></textarea>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <label for="userName" class="label">
+                    Your Name (Optional)
+                </label>
+                <input type="text" id="userName" name="userName">
+            </fieldset>
+            <br><br>
+                <input type="submit" value="Post Review">
+            </form>
+        </div>
     </main>
     <footer>
         <p class="copyright">
