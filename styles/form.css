@@ -4,7 +4,7 @@
     --light-background: #D5CDD5;
     --dark-text: black;
     --light-text: #FFF9F1;
-    --required-color: darkred;
+    --accent-color: #7B3F61;
 }
 
 * {
@@ -34,7 +34,8 @@ main {
 }
 
 .asterisk {
-    color: var(--required-color);
+    color: var(--accent-color);
+    font-size: larger;
 }
 
 .form fieldset {

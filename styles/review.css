@@ -3,7 +3,7 @@
     --light-background: #D5CDD5;
     --dark-text: black;
     --light-text: #FFF9F1;
-    --accent-color: #7B3F61; /* optional touch for links/buttons */
+    --accent-color: #7B3F61;
 }
 
 body {
