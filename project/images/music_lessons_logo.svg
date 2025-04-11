@@ -1,0 +1,15 @@
+
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .note { fill: #417D7A; }
+    .text { fill: #2E2E2E; font-family: 'Georgia', serif; font-size: 28px; font-weight: bold; }
+  </style>
+  <!-- Music Note -->
+  <g class="note" transform="translate(20, 20)">
+    <circle cx="0" cy="60" r="10" />
+    <rect x="0" y="0" width="6" height="60" />
+    <path d="M6 0 Q26 10 12 20" fill="#417D7A" />
+  </g>
+  <!-- Logo Text -->
+  <text x="60" y="65" class="text">Music Lessons</text>
+</svg>
