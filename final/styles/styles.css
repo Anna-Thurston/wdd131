@@ -96,6 +96,16 @@ text-align: center;
 padding: 2rem;
 }
 
+.hero a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero a:hover {
+    border-bottom: 3px solid var(--color-cta-hover);
+    color: var(--color-cta-hover);
+}
+
 .features,
 .lesson-cards {
 display: flex;
@@ -115,6 +125,7 @@ width: 100%;
 }
 
 i {
+    font-size: medium;
     font-weight: 100;
 }
 
