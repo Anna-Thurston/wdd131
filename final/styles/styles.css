@@ -96,12 +96,12 @@ text-align: center;
 padding: 2rem;
 }
 
-.hero a {
+#hero a {
     text-decoration: none;
     color: inherit;
 }
 
-.hero a:hover {
+#hero a:hover {
     border-bottom: 3px solid var(--color-cta-hover);
     color: var(--color-cta-hover);
 }
