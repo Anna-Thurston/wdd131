@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Harmony Hub</title>
+    <meta name="author" content="Anna Thurston">
+    <meta name="description" content="WDD131 Final Project contact page allows users to sumbit a message using a dynamic form using localStorage to store each sumbission.">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="hamburger" aria-label="Toggle menu">&#9776;</button>
+            <h1>Harmony Hub</h1>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="hero">Contact Us</h2>
+        <form id="contactForm" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+          
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+          
+            <button type="submit" class="cta-btn">Send Message</button>
+            <p id="formResponse"></p>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Harmony Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+  
