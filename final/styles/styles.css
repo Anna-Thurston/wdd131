@@ -18,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    color: black;
 }
 
 body {
@@ -59,11 +60,14 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 #hamburger {
     display: block;
     font-size: 1.8rem;
+    font-weight: bolder;
     background: none;
     color: white;
     border: none;
@@ -118,6 +122,7 @@ nav a {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
+    font-size: x-large;
 }
 
 .cta-btn:hover {
@@ -201,6 +206,7 @@ footer {
     background-color: var(--color-primary);
     color: white;
     margin-top: 2rem;
+    font-size: x-large;
 }
 
 
